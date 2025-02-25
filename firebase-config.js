@@ -1,12 +1,12 @@
 // Firebase 設定（実際のプロジェクト情報を入力）
 const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-    databaseURL: "https://YOUR_PROJECT_ID.firebaseio.com",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_PROJECT_ID.appspot.com",
-    messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-    appId: "YOUR_APP_ID"
+    apiKey: "AIzaSyAqSBMLjOA_t8HpF9DOG1Ii6-DYPPA-p5k",
+    authDomain: "farmm-12ab5.firebaseapp.com",
+    databaseURL: "https://console.firebase.google.com/u/1/project/farmm-12ab5/database/farmm-12ab5-default-rtdb/data/~2F",
+    projectId: "farmm-12ab5",
+    storageBucket: "farmm-12ab5.firebasestorage.app",
+    messagingSenderId: "1007963653804",
+    appId: "1:1007963653804:web:cebee6bbfaa3057b928109"
 };
 
 // Firebaseの初期化
