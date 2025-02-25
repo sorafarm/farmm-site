@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FARMM - 農業管理</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>FARMM（ファームエム）</h1>
+        <nav>
+            <ul>
+                <li><a href="#calendar">カレンダー</a></li>
+                <li><a href="#sales">販売管理</a></li>
+                <li><a href="#diary">日記</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="calendar">
+            <h2>カレンダー管理</h2>
+            <div id="calendar-container"></div>
+        </section>
+
+        <section id="sales">
+            <h2>販売管理</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>日付</th>
+                        <th>商品名</th>
+                        <th>販売数</th>
+                        <th>売れ残り</th>
+                    </tr>
+                </thead>
+                <tbody id="sales-data"></tbody>
+            </table>
+        </section>
+
+        <section id="diary">
+            <h2>写真付き日記</h2>
+            <input type="file" id="photo-upload" accept="image/*">
+            <button onclick="uploadPhoto()">アップロード</button>
+            <div id="diary-container"></div>
+        </section>
+    </main>
+
+    <script src="firebase-config.js"></script>
+</body>
+</html>
