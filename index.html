@@ -23,17 +23,40 @@
         <section id="calendar">
             <h2>カレンダー管理</h2>
             <div id="calendar-container"></div>
+            
+            <h3>📅 選択した日付の予定</h3>
+            <p id="selected-date">日付を選択してください</p>
+            <ul id="event-list"></ul>
+
+            <form id="event-form">
+                <label for="event-title">予定を追加:</label>
+                <input type="text" id="event-title" placeholder="予定を入力" required>
+                <button type="submit">追加</button>
+            </form>
         </section>
 
         <section id="sales">
             <h2>販売管理</h2>
+
+            <form id="sales-form">
+                <label for="sales-date">日付:</label>
+                <input type="date" id="sales-date" required>
+                
+                <label for="sales-product">商品名:</label>
+                <input type="text" id="sales-product" placeholder="商品名" required>
+
+                <label for="sales-quantity">販売数:</label>
+                <input type="number" id="sales-quantity" required>
+
+                <button type="submit">追加</button>
+            </form>
+
             <table>
                 <thead>
                     <tr>
                         <th>日付</th>
                         <th>商品名</th>
                         <th>販売数</th>
-                        <th>売れ残り</th>
                     </tr>
                 </thead>
                 <tbody id="sales-data"></tbody>
@@ -42,8 +65,20 @@
 
         <section id="diary">
             <h2>写真付き日記</h2>
-            <input type="file" id="photo-upload" accept="image/*">
-            <button onclick="uploadPhoto()">アップロード</button>
+
+            <form id="diary-form">
+                <label for="diary-date">日付:</label>
+                <input type="date" id="diary-date" required>
+
+                <label for="diary-text">内容:</label>
+                <textarea id="diary-text" placeholder="日記の内容を入力" required></textarea>
+
+                <label for="photo-upload">写真を選択:</label>
+                <input type="file" id="photo-upload" accept="image/*">
+
+                <button type="submit">アップロード</button>
+            </form>
+
             <div id="diary-container"></div>
         </section>
     </main>
